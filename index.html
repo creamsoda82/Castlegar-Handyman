@@ -1,101 +1,387 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Castlegar Handyman | Mitch</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-    <style>
-        body { font-family: 'Inter', system_ui, sans-serif; }
-        .hero-bg { 
-            background: linear-gradient(rgba(0,0,0,0.65), rgba(0,0,0,0.65)), url('IMG_0106.jpg'); 
-            background-size: cover; 
-            background-position: center;
-        }
-    </style>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Castlegar HandyMan | Professional Renovation Expertise for Small Scale Projects</title>
+  <meta name="description" content="Castlegar HandyMan provides fast, reliable handyman, renovation, repair, carpentry, welding, fabrication, tile, and small engine repair services in Castlegar and surrounding area.">
+  <meta name="theme-color" content="#f2b63f">
+  <meta property="og:title" content="Castlegar HandyMan">
+  <meta property="og:description" content="Fast response. Quality work in Castlegar & surrounding area.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="images/hero-kitchen.jpg">
+  <link rel="preconnect" href="[fonts.googleapis.com](https://fonts.googleapis.com)">
+  <link rel="preconnect" href="[fonts.gstatic.com](https://fonts.gstatic.com)" crossorigin>
+  <link href="[fonts.googleapis.com](https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@400;500;600;700;800&display=swap)" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
 </head>
-<body class="bg-gray-50 text-gray-800">
-
-    <!-- Navbar -->
-    <nav class="bg-white shadow-md sticky top-0 z-50">
-        <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
-            <div class="flex items-center gap-3">
-                <img src="handyman-logo.png" alt="Castlegar Handyman Logo" class="h-14 w-auto">
-                <div class="text-2xl font-bold tracking-tight">
-                    <span>CASTLEGAR</span> <span class="text-yellow-500">HANDYMAN</span>
-                </div>
-            </div>
-            <a href="tel:5198306420" class="bg-yellow-500 hover:bg-yellow-600 text-gray-900 px-6 py-3 rounded-2xl font-semibold flex items-center gap-2">
-                <i class="fas fa-phone"></i> (519) 830-6420
-            </a>
-        </div>
+<body>
+  <header class="site-header" id="top">
+    <a class="brand" href="index.html" aria-label="Castlegar HandyMan home">
+      <span class="brand-logo-wrap">
+        <img src="images/logo.png" alt="Castlegar HandyMan logo" class="brand-logo">
+      </span>
+      <span class="brand-text">
+        <span class="brand-name">Castlegar HandyMan</span>
+        <span class="brand-tagline">Professional renovation expertise for small scale projects</span>
+      </span>
+    </a>
+    <button class="nav-toggle" type="button" aria-label="Open navigation" aria-expanded="false">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+    <nav class="site-nav" aria-label="Main navigation">
+      <a href="#services">Services</a>
+      <a href="#work">Work</a>
+      <a href="#about">About Mitch</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="#contact">Contact</a>
+      <a class="nav-call" href="tel:+15198306420">Call Mitch</a>
     </nav>
-
-    <!-- Hero -->
-    <header class="hero-bg text-white py-24 md:py-32">
-        <div class="max-w-4xl mx-auto px-6 text-center">
-            <h1 class="text-5xl md:text-6xl font-bold mb-4">Castlegar Handyman</h1>
-            <p class="text-2xl md:text-3xl font-medium mb-8 text-yellow-300">Bringing professional renovation expertise to small scale projects</p>
-            <p class="text-xl">Fast response. Quality work in Castlegar & surrounding area.</p>
+  </header>
+  <main>
+    <section class="hero">
+      <div class="hero-bg" role="img" aria-label="Kitchen renovation background"></div>
+      <div class="hero-overlay"></div>
+      <div class="hero-content">
+        <div class="hero-card">
+          <div class="hero-logo-panel">
+            <img src="images/logo.png" alt="Castlegar HandyMan logo" class="hero-logo">
+          </div>
+          <p class="eyebrow">Castlegar & surrounding area</p>
+          <h1>Fast response. Quality work in Castlegar & surrounding area.</h1>
+          <p class="hero-subtitle">
+            Bringing professional renovation expertise to small scale projects.
+          </p>
+          <p class="hero-copy">
+            From quick repairs and small builds to carpentry, tile, welding, fabrication,
+            small engine repairs, and renovation work, Mitch helps homeowners get the job done
+            without the long wait.
+          </p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="tel:+15198306420">Call Mitch</a>
+            <a class="btn btn-secondary" href="sms:+15198306420">Text Mitch</a>
+            <a class="btn btn-ghost" href="mailto:castlegarhandyman@gmail.com">Email</a>
+          </div>
+          <div class="trust-strip" aria-label="Business highlights">
+            <span>5-star rated on Google</span>
+            <span>Fully insured</span>
+            <span>WorkSafeBC compliant</span>
+          </div>
         </div>
-    </header>
-
-    <!-- Services -->
-    <section class="py-16 bg-white">
-        <div class="max-w-6xl mx-auto px-6">
-            <h2 class="text-4xl font-bold text-center mb-12">Small Repairs & Practical Projects</h2>
-            <div class="grid md:grid-cols-3 gap-8">
-                <div class="p-8 border rounded-3xl">
-                    <h3 class="text-2xl font-semibold mb-4">Repairs & Maintenance</h3>
-                    <ul class="space-y-2 text-gray-600">
-                        <li>Small engine repairs</li>
-                        <li>Eavestrough cleaning</li>
-                        <li>Plumbing & electrical fixes</li>
-                        <li>Welding and property repairs</li>
-                    </ul>
-                </div>
-                <div class="p-8 border rounded-3xl">
-                    <h3 class="text-2xl font-semibold mb-4">Carpentry & Woodworking</h3>
-                    <ul class="space-y-2 text-gray-600">
-                        <li>Decks and fencing</li>
-                        <li>Trim, shelving, built-ins</li>
-                        <li>Framing and finishing</li>
-                    </ul>
-                </div>
-                <div class="p-8 border rounded-3xl">
-                    <h3 class="text-2xl font-semibold mb-4">Renovations & Tile Work</h3>
-                    <ul class="space-y-2 text-gray-600">
-                        <li>Kitchen & bath updates</li>
-                        <li>Tiling</li>
-                        <li>Room improvements</li>
-                    </ul>
-                </div>
+      </div>
+    </section>
+    <section class="quick-contact" aria-label="Quick contact options">
+      <a href="tel:+15198306420">
+        <span>Call</span>
+        <strong>519 830 6420</strong>
+      </a>
+      <a href="sms:+15198306420">
+        <span>Text</span>
+        <strong>Fast reply</strong>
+      </a>
+      <a href="mailto:castlegarhandyman@gmail.com">
+        <span>Email</span>
+        <strong>castlegarhandyman@gmail.com</strong>
+      </a>
+    </section>
+    <section class="section intro-section">
+      <div class="container two-column">
+        <div>
+          <p class="eyebrow">Local, reliable, straightforward</p>
+          <h2>Small to medium jobs handled with real renovation experience.</h2>
+        </div>
+        <div class="rich-text">
+          <p>
+            Hi, I’m Mitch, The Castlegar Handyman - your local go-to guy for just about
+            any job around the house or property. With over 20 years of hands-on experience,
+            I handle everything from construction and renovations to welding, electrical,
+            woodworking, small engine repairs, eavestrough cleaning, and pretty much anything
+            else you need fixed or built.
+          </p>
+          <p>
+            I focus on small to medium jobs, with quick communication, practical solutions,
+            and quality work you can feel good about.
+          </p>
+        </div>
+      </div>
+    </section>
+    <section class="section services-section" id="services">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow">What Mitch can help with</p>
+          <h2>Handyman services for homes, shops, rentals, and properties.</h2>
+          <p>
+            If it needs fixing, building, cleaning up, adjusting, replacing, repairing,
+            or figuring out, there is a good chance Mitch can help.
+          </p>
+        </div>
+        <div class="service-grid">
+          <article class="service-card">
+            <h3>Renovations & Repairs</h3>
+            <p>Small renovation jobs, punch lists, drywall, trim, doors, fixtures, repairs, and general home improvements.</p>
+          </article>
+          <article class="service-card">
+            <h3>Carpentry & Woodworking</h3>
+            <p>Deck repairs, small builds, framing, finishing, shelving, outdoor structures, and custom fixes.</p>
+          </article>
+          <article class="service-card">
+            <h3>Tile & Finishing</h3>
+            <p>Backsplashes, tile repairs, finishing details, updates, and practical upgrades around the home.</p>
+          </article>
+          <article class="service-card">
+            <h3>Welding & Fabrication</h3>
+            <p>Metal repairs, trailer fixes, brackets, gates, small fabrication jobs, and property equipment repairs.</p>
+          </article>
+          <article class="service-card">
+            <h3>Small Engine Repairs</h3>
+            <p>Lawn equipment, small machines, tune-ups, troubleshooting, and practical mechanical repairs.</p>
+          </article>
+          <article class="service-card">
+            <h3>Property Maintenance</h3>
+            <p>Eavestrough cleaning, seasonal jobs, small electrical tasks, odd jobs, and maintenance work.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+    <section class="section work-section" id="work">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow">Recent work</p>
+          <h2>Practical work, clean finishes, and jobs done right.</h2>
+        </div>
+        <div class="work-grid">
+          <article class="work-card">
+            <img src="images/trailer.jpg" alt="Utility trailer with metal ramp and wood deck">
+            <div class="work-card-content">
+              <span>Welding / Fabrication</span>
+              <h3>Trailer and metal repair work</h3>
+              <p>Strong, practical fixes for trailers, equipment, and property projects.</p>
             </div>
-        </div>
-    </section>
-
-    <!-- Gallery -->
-    <section class="py-16 bg-gray-100">
-        <div class="max-w-6xl mx-auto px-6">
-            <h2 class="text-4xl font-bold text-center mb-12">Recent Work</h2>
-            <div class="grid md:grid-cols-3 gap-6" id="gallery">
-                <!-- Add your photos here easily -->
-                <img src="IMG_0106.jpg" alt="Kitchen" class="rounded-3xl">
-                <!-- Add more <img> tags as needed -->
+          </article>
+          <article class="work-card">
+            <img src="images/deck.jpg" alt="Wood deck with railings and grill area">
+            <div class="work-card-content">
+              <span>Carpentry</span>
+              <h3>Decks, railings, and outdoor spaces</h3>
+              <p>Carpentry repairs and small builds that make outdoor areas more useful.</p>
             </div>
+          </article>
+          <article class="work-card">
+            <img src="images/kitchen-reno.jpg" alt="Renovated kitchen with white cabinets and dark backsplash">
+            <div class="work-card-content">
+              <span>Tile / Renovations</span>
+              <h3>Kitchen updates and finishing work</h3>
+              <p>Tile, finishing details, repairs, and renovation work with a professional touch.</p>
+            </div>
+          </article>
         </div>
-    </section>
-
-    <!-- Contact -->
-    <section class="py-16 bg-gray-900 text-white text-center">
-        <div class="max-w-4xl mx-auto px-6">
-            <h2 class="text-4xl font-bold mb-6">Let's Get Your Project Done</h2>
-            <p class="text-xl mb-8">Call, text, or email. For project details, send a message and Mitch will get back to you quick.</p>
-            <a href="tel:5198306420" class="text-5xl font-semibold block mb-6 hover:text-yellow-400">(519) 830-6420</a>
-            <a href="mailto:castlegarhandyman@gmail.com" class="text-xl hover:text-yellow-400">castlegarhandyman@gmail.com</a>
+        <div class="center-action">
+          <a class="btn btn-primary" href="gallery.html">See Gallery</a>
         </div>
+      </div>
     </section>
+    <section class="section why-section">
+      <div class="container two-column">
+        <div>
+          <p class="eyebrow">Why choose Castlegar HandyMan</p>
+          <h2>No endless phone tag. No long waiting lists.</h2>
+        </div>
+        <div class="feature-list">
+          <div class="feature-item">
+            <strong>Fast response</strong>
+            <p>Mitch answers calls and replies to messages quickly, so you are not left waiting.</p>
+          </div>
+          <div class="feature-item">
+            <strong>Quick booking</strong>
+            <p>Many jobs can usually be booked and completed fast - often within 72 hours.</p>
+          </div>
+          <div class="feature-item">
+            <strong>Experienced work</strong>
+            <p>Over 20 years of hands-on construction, renovation, repair, and property experience.</p>
+          </div>
+          <div class="feature-item">
+            <strong>Neighbourly service</strong>
+            <p>Friendly, straightforward communication and reliable work from someone local.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section about-section" id="about">
+      <div class="container about-card">
+        <div>
+          <p class="eyebrow">About Mitch</p>
+          <h2>Your local go-to guy for just about any job around the house or property.</h2>
+        </div>
+        <div class="rich-text">
+          <p>
+            What sets Mitch apart is simple: he answers the phone, replies to messages,
+            and works hard to get jobs booked and completed quickly. Whether it is a small
+            repair or a bigger project, he brings a friendly, straightforward approach and
+            treats every customer like a neighbour.
+          </p>
+          <p>
+            Fully insured and WorkSafeBC compliant, Castlegar HandyMan is built around
+            reliable service, quality workmanship, and helping local homeowners take care
+            of the jobs that are too important to ignore.
+          </p>
+        </div>
+      </div>
+    </section>
+    <section class="section contact-section" id="contact">
+      <div class="container contact-card">
+        <div>
+          <p class="eyebrow">Ready to get it done?</p>
+          <h2>Call, text, or email. For project details, send a message and Mitch will get back to you quick.</h2>
+          <p>
+            Serving Castlegar and surrounding area with fast, reliable handyman,
+            repair, renovation, and property services.
+          </p>
+        </div>
+        <div class="contact-panel">
+          <a class="contact-link primary-contact" href="tel:+15198306420">
+            <span>Call Mitch</span>
+            <strong>519 830 6420</strong>
+          </a>
+          <a class="contact-link" href="sms:+15198306420">
+            <span>Text Mitch</span>
+            <strong>519 830 6420</strong>
+          </a>
+          <a class="contact-link" href="mailto:castlegarhandyman@gmail.com">
+            <span>Email</span>
+            <strong>castlegarhandyman@gmail.com</strong>
+          </a>
+          <div class="social-row">
+            <a href="[facebook.com](https://www.facebook.com/p/Castlegar-HandyMan-61579093536670/)" target="_blank" rel="noopener noreferrer nofollow">Facebook</a>
+            <a href="[share.google](https://share.google/okr7V5vgyLZ2hrdUL)" target="_blank" rel="noopener noreferrer nofollow">5-star rated on Google</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>&copy; <span id="year"></span> Castlegar HandyMan. All rights reserved.</p>
+      <p>Bringing professional renovation expertise to small scale projects.</p>
+    </div>
+  </footer>
+  <script src="js/main.js"></script>
+</body>
+</html>
+gallery.html
+html
 
-</body> 
+
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Gallery | Castlegar HandyMan</title>
+  <meta name="description" content="Project gallery for Castlegar HandyMan. Renovations, repairs, carpentry, tile, welding, fabrication, and property projects in Castlegar and surrounding area.">
+  <meta name="theme-color" content="#f2b63f">
+  <link rel="preconnect" href="[fonts.googleapis.com](https://fonts.googleapis.com)">
+  <link rel="preconnect" href="[fonts.gstatic.com](https://fonts.gstatic.com)" crossorigin>
+  <link href="[fonts.googleapis.com](https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@400;500;600;700;800&display=swap)" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="index.html" aria-label="Castlegar HandyMan home">
+      <span class="brand-logo-wrap">
+        <img src="images/logo.png" alt="Castlegar HandyMan logo" class="brand-logo">
+      </span>
+      <span class="brand-text">
+        <span class="brand-name">Castlegar HandyMan</span>
+        <span class="brand-tagline">Professional renovation expertise for small scale projects</span>
+      </span>
+    </a>
+    <button class="nav-toggle" type="button" aria-label="Open navigation" aria-expanded="false">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+    <nav class="site-nav" aria-label="Main navigation">
+      <a href="index.html#services">Services</a>
+      <a href="index.html#work">Work</a>
+      <a href="index.html#about">About Mitch</a>
+      <a href="gallery.html" aria-current="page">Gallery</a>
+      <a href="index.html#contact">Contact</a>
+      <a class="nav-call" href="tel:+15198306420">Call Mitch</a>
+    </nav>
+  </header>
+  <main>
+    <section class="page-hero gallery-hero">
+      <div class="container">
+        <p class="eyebrow">Project gallery</p>
+        <h1>Handyman, renovation, repair, carpentry, tile, and fabrication work.</h1>
+        <p>
+          A growing collection of real Castlegar HandyMan project photos.
+          Add more images anytime using the same simple file naming pattern.
+        </p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="tel:+15198306420">Call Mitch</a>
+          <a class="btn btn-secondary" href="sms:+15198306420">Text Mitch</a>
+          <a class="btn btn-ghost" href="index.html">Back Home</a>
+        </div>
+      </div>
+    </section>
+    <section class="section gallery-section">
+      <div class="container">
+        <div class="gallery-instructions">
+          <h2>Gallery</h2>
+          <p>
+            To add more photos later, upload them into <strong>images/gallery/</strong>
+            and add another gallery item using the same pattern.
+          </p>
+        </div>
+        <div class="gallery-grid">
+          <button class="gallery-item" type="button" data-full="images/trailer.jpg" aria-label="Open trailer project photo">
+            <img src="images/trailer.jpg" alt="Trailer welding and fabrication project">
+            <span>Welding / Fabrication</span>
+          </button>
+          <button class="gallery-item" type="button" data-full="images/deck.jpg" aria-label="Open deck project photo">
+            <img src="images/deck.jpg" alt="Deck carpentry project">
+            <span>Carpentry</span>
+          </button>
+          <button class="gallery-item" type="button" data-full="images/kitchen-reno.jpg" aria-label="Open kitchen renovation photo">
+            <img src="images/kitchen-reno.jpg" alt="Kitchen tile and renovation project">
+            <span>Tile / Renovations</span>
+          </button>
+          <button class="gallery-item" type="button" data-full="images/gallery/gallery-01.jpg" aria-label="Open gallery photo 1">
+            <img src="images/gallery/gallery-01.jpg" alt="Castlegar HandyMan project photo 1">
+            <span>Project Photo</span>
+          </button>
+          <button class="gallery-item" type="button" data-full="images/gallery/gallery-02.jpg" aria-label="Open gallery photo 2">
+            <img src="images/gallery/gallery-02.jpg" alt="Castlegar HandyMan project photo 2">
+            <span>Project Photo</span>
+          </button>
+          <button class="gallery-item" type="button" data-full="images/gallery/gallery-03.jpg" aria-label="Open gallery photo 3">
+            <img src="images/gallery/gallery-03.jpg" alt="Castlegar HandyMan project photo 3">
+            <span>Project Photo</span>
+          </button>
+          <button class="gallery-item" type="button" data-full="images/gallery/gallery-04.jpg" aria-label="Open gallery photo 4">
+            <img src="images/gallery/gallery-04.jpg" alt="Castlegar HandyMan project photo 4">
+            <span>Project Photo</span>
+          </button>
+        </div>
+        <div class="center-action">
+          <a class="btn btn-primary" href="index.html#contact">Start a Project</a>
+        </div>
+      </div>
+    </section>
+  </main>
+  <div class="lightbox" id="lightbox" hidden>
+    <button class="lightbox-close" type="button" aria-label="Close image">&times;</button>
+    <img src="" alt="">
+  </div>
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>&copy; <span id="year"></span> Castlegar HandyMan. All rights reserved.</p>
+      <p>Fast response. Quality work in Castlegar & surrounding area.</p>
+    </div>
+  </footer>
+  <script src="js/main.js"></script>
+</body>
 </html>
