@@ -16,77 +16,86 @@
     </style>
 </head>
 <body class="bg-gray-50 text-gray-800">
-    <!-- Navbar with Logo -->
+
+    <!-- Navbar -->
     <nav class="bg-white shadow-md sticky top-0 z-50">
         <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
-            <div class="flex items-center gap-4">
-                <img src="handyman-logo.png" alt="Castlegar Handyman Logo" class="h-16 w-auto opacity-95">
-                <div class="text-3xl font-bold tracking-tighter">
-                    <span class="text-gray-900">CASTLEGAR</span>
-                    <span class="text-yellow-500">HANDYMAN</span>
+            <div class="flex items-center gap-3">
+                <img src="handyman-logo.png" alt="Castlegar Handyman Logo" class="h-14 w-auto">
+                <div class="text-2xl font-bold tracking-tight">
+                    <span>CASTLEGAR</span> <span class="text-yellow-500">HANDYMAN</span>
                 </div>
             </div>
-            <a href="tel:5198306420" class="bg-yellow-500 hover:bg-yellow-600 text-gray-900 px-6 py-3 rounded-2xl font-semibold flex items-center gap-2">Call (519) 830-6420</a>
+            <a href="tel:5198306420" class="bg-yellow-500 hover:bg-yellow-600 text-gray-900 px-6 py-3 rounded-2xl font-semibold flex items-center gap-2">
+                <i class="fas fa-phone"></i> (519) 830-6420
+            </a>
         </div>
     </nav>
 
     <!-- Hero -->
-    <header class="hero-bg text-white py-32 text-center">
-        <div class="max-w-4xl mx-auto px-6">
-            <h1 class="text-5xl md:text-6xl font-bold mb-6">Castlegar Handyman</h1>
-            <p class="text-3xl md:text-4xl font-medium text-yellow-300 mb-8">"Bringing professional renovation expertise to small scale projects"</p>
+    <header class="hero-bg text-white py-24 md:py-32">
+        <div class="max-w-4xl mx-auto px-6 text-center">
+            <h1 class="text-5xl md:text-6xl font-bold mb-4">Castlegar Handyman</h1>
+            <p class="text-2xl md:text-3xl font-medium mb-8 text-yellow-300">Bringing professional renovation expertise to small scale projects</p>
             <p class="text-xl">Fast response. Quality work in Castlegar & surrounding area.</p>
         </div>
     </header>
 
     <!-- Services -->
-    <section id="services" class="py-20 bg-white">
+    <section class="py-16 bg-white">
         <div class="max-w-6xl mx-auto px-6">
-            <h2 class="text-4xl font-bold text-center mb-12">Reliable Home & Property Repairs</h2>
+            <h2 class="text-4xl font-bold text-center mb-12">Small Repairs & Practical Projects</h2>
             <div class="grid md:grid-cols-3 gap-8">
-                <div class="p-8 rounded-3xl border hover:border-yellow-400 transition">
+                <div class="p-8 border rounded-3xl">
                     <h3 class="text-2xl font-semibold mb-4">Repairs & Maintenance</h3>
-                    <p>Small engine repairs, eavestrough cleaning, plumbing & electrical fixes, and general property maintenance.</p>
+                    <ul class="space-y-2 text-gray-600">
+                        <li>Small engine repairs</li>
+                        <li>Eavestrough cleaning</li>
+                        <li>Plumbing & electrical fixes</li>
+                        <li>Welding and property repairs</li>
+                    </ul>
                 </div>
-                <div class="p-8 rounded-3xl border hover:border-yellow-400 transition">
+                <div class="p-8 border rounded-3xl">
                     <h3 class="text-2xl font-semibold mb-4">Carpentry & Woodworking</h3>
-                    <p>Decks, fencing, shelving, trim work, and practical custom projects.</p>
+                    <ul class="space-y-2 text-gray-600">
+                        <li>Decks and fencing</li>
+                        <li>Trim, shelving, built-ins</li>
+                        <li>Framing and finishing</li>
+                    </ul>
                 </div>
-                <div class="p-8 rounded-3xl border hover:border-yellow-400 transition">
-                    <h3 class="text-2xl font-semibold mb-4">Renovations & Improvements</h3>
-                    <p>Kitchen/bath updates, tiling, minor renovations, and quality home fixes.</p>
+                <div class="p-8 border rounded-3xl">
+                    <h3 class="text-2xl font-semibold mb-4">Renovations & Tile Work</h3>
+                    <ul class="space-y-2 text-gray-600">
+                        <li>Kitchen & bath updates</li>
+                        <li>Tiling</li>
+                        <li>Room improvements</li>
+                    </ul>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Gallery -->
-    <section id="gallery" class="py-20 bg-gray-100">
+    <section class="py-16 bg-gray-100">
         <div class="max-w-6xl mx-auto px-6">
-            <h2 class="text-4xl font-bold text-center mb-12">Recent Projects</h2>
-            <div class="grid md:grid-cols-3 gap-6">
-                <div><img src="IMG_0090.png" alt="Deck Carpentry" class="rounded-3xl w-full h-64 object-cover"><p class="text-center mt-3 font-medium">Carpentry & Decks</p></div>
-                <div><img src="IMG_0106.jpg" alt="Kitchen Renovation" class="rounded-3xl w-full h-64 object-cover"><p class="text-center mt-3 font-medium">Kitchen & Tile Work</p></div>
-                <div><img src="Image.jpg" alt="Welding Fabrication" class="rounded-3xl w-full h-64 object-cover"><p class="text-center mt-3 font-medium">Welding & Fabrication</p></div>
-                <!-- Add more of your photos as needed -->
+            <h2 class="text-4xl font-bold text-center mb-12">Recent Work</h2>
+            <div class="grid md:grid-cols-3 gap-6" id="gallery">
+                <!-- Add your photos here easily -->
+                <img src="IMG_0106.jpg" alt="Kitchen" class="rounded-3xl">
+                <!-- Add more <img> tags as needed -->
             </div>
         </div>
     </section>
 
-    <!-- About & Contact -->
-    <section id="contact" class="py-20 bg-gray-900 text-white">
-        <div class="max-w-4xl mx-auto px-6 text-center">
-            <h2 class="text-4xl font-bold mb-8">Hi, I'm Mitch</h2>
-            <p class="text-lg max-w-2xl mx-auto">Local one-man handyman with 20+ years experience. I answer quickly and get small-to-medium jobs done fast.</p>
-            <div class="mt-12">
-                <a href="tel:5198306420" class="text-5xl font-semibold block mb-6 hover:text-yellow-400">(519) 830-6420</a>
-                <a href="mailto:castlegarhandyman@gmail.com" class="text-xl hover:text-yellow-400">castlegarhandyman@gmail.com</a>
-            </div>
+    <!-- Contact -->
+    <section class="py-16 bg-gray-900 text-white text-center">
+        <div class="max-w-4xl mx-auto px-6">
+            <h2 class="text-4xl font-bold mb-6">Let's Get Your Project Done</h2>
+            <p class="text-xl mb-8">Call, text, or email. For project details, send a message and Mitch will get back to you quick.</p>
+            <a href="tel:5198306420" class="text-5xl font-semibold block mb-6 hover:text-yellow-400">(519) 830-6420</a>
+            <a href="mailto:castlegarhandyman@gmail.com" class="text-xl hover:text-yellow-400">castlegarhandyman@gmail.com</a>
         </div>
     </section>
 
-    <footer class="bg-black text-gray-400 py-8 text-center">
-        <p>© 2026 Castlegar Handyman • Castlegar, BC</p>
-    </footer>
 </body>
 </html>
