@@ -179,7 +179,7 @@ p{ margin:0 0 1em; }
 /* ---------- About ---------- */
 .about{ 
   padding: 110px 0 90px; 
-  background: var(--white) url('../logo.png') center/cover no-repeat; 
+  background: var(--white) url('logo.png') center/cover  
   background-blend-mode: overlay;
   position: relative;
 .about-grid{ max-width: 820px; }
