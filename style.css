@@ -180,9 +180,9 @@ p{ margin:0 0 1em; }
 /* ---------- About ---------- */
 .about{
   padding: 110px 0 90px;
-  background: var(--white) url('logo.png') center/cover no-repeat fixed;
-  background-blend-mode: overlay;
   position: relative;
+  overflow: hidden;
+  background: var(--white) url('logo.png') center/cover no-repeat;
 }
 
 .about::before{
@@ -190,10 +190,10 @@ p{ margin:0 0 1em; }
   position: absolute;
   inset: 0;
   background: linear-gradient(180deg, 
-    rgba(255,255,255,0.92) 0%, 
-    rgba(255,255,255,0.95) 30%, 
-    rgba(255,255,255,0.93) 70%, 
-    rgba(255,255,255,0.90) 100%);
+    rgba(255,255,255,0.88) 0%, 
+    rgba(255,255,255,0.92) 35%, 
+    rgba(255,255,255,0.90) 65%, 
+    rgba(255,255,255,0.85) 100%);
   z-index: 1;
 }
 
