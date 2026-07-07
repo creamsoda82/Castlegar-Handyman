@@ -183,7 +183,7 @@ p{ margin:0 0 1em; }
   position: relative;
   overflow: hidden;
   background: var(--white) url('logo.png') center/contain no-repeat;
-   background-size: 60%
+   background-size: 100%
 }
 
 .about::before{
