@@ -182,7 +182,8 @@ p{ margin:0 0 1em; }
   padding: 110px 0 90px;
   position: relative;
   overflow: hidden;
-  background: var(--white) url('logo.png') center/cover no-repeat;
+  background: var(--white) url('logo.png') center/contain no-repeat;
+   background-size: 45%
 }
 
 .about::before{
@@ -190,9 +191,9 @@ p{ margin:0 0 1em; }
   position: absolute;
   inset: 0;
   background: linear-gradient(180deg, 
-    rgba(255,255,255,0.88) 0%, 
-    rgba(255,255,255,0.94) 40%, 
-    rgba(255,255,255,0.90) 100%);
+    rgba(255,255,255,0.65) 0%, 
+    rgba(255,255,255,0.75) 40%, 
+    rgba(255,255,255,0.70) 100%);
   z-index: 1;
 }
 
