@@ -15,4 +15,6 @@ const GALLERY_PHOTOS = [
   { file: "deck.jpg",         caption: "Deck & pergola carpentry" },
   { file: "kitchen.jpg",      caption: "Kitchen tile & renovation" },
   { file: "hero-kitchen.jpg", caption: "Kitchen renovation" },
+  // New images go here:
+  { file: "trex deck.png", caption: "Trex Deck Build" },
 ];
